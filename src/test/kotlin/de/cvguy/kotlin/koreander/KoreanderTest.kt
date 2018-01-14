@@ -75,4 +75,9 @@ class KoreanderTest {
         val result = koreander.render(inputStream, unit)
         assertThat(result, instanceOf(String::class.java))
     }
+
+    @Test
+    fun fail() {
+        Assert.fail("Travis fail test")
+    }
 }
